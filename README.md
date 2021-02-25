@@ -2,9 +2,9 @@
 
 ### Objectives:
 ##### This project aims to:
-* analyze the Gapminder project's data.
+* analyze the Gapminder datasets.
 * Visualize the correlation between each country's population and fertiliy rate.
-* Generate a gif image with python and matplotlib.
+* Generate a gif image using python and matplotlib.
  
 #### Life Expectancy vs. Fertility:
 ![wail](lifeexp.gif)
