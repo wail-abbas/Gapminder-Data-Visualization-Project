@@ -21,6 +21,12 @@
 Code for the research phase of R&amp;D. Results will be input for production code.
 
 
+![Build Status](https://github.com/agrivero-ai/experiments/workflows/Python%20Testing/badge.svg)
+
+# experiments
+Code for the research phase of R&amp;D. Results will be input for production code.
+
+
 # Setting up docker:
 
 #### 1.Install the latest NVIDIA drivers:
@@ -46,12 +52,12 @@ Code for the research phase of R&amp;D. Results will be input for production cod
 ##### 4.2 Run tensorflow:
             $ docker run --gpus all -it -p 8888:8888 -v <path to experiments folder>:/tf/agrivero/ tensorflow/tensorflow:2.5.0-gpu-jupyter
 ##### 4.3 Instal OpenCV:
-            4.3.1 inside jupyter notebook:
-                $ pip install opencv-python
-            4.3.2 In the terminal, list the running containers:
-                $ docker ps
-            Copy the CONTAINER ID of tensorflow image and palace it in the following command.
-                $ docker commit <CONTAINER ID> tensorflow/tensorflow:2.5.0-gpu-jupyter-opencv
-            You can also check [This Link](https://docs.docker.com/engine/reference/commandline/commit/)
+###### 4.3.1 inside jupyter notebook:
+            $ pip install opencv-python
+###### 4.3.2 In the terminal, list the running containers:
+            $ docker ps
+###### Copy the CONTAINER ID of tensorflow image and palace it in the following command.
+            $ docker commit <CONTAINER ID> tensorflow/tensorflow:2.5.0-gpu-jupyter-opencv
+###### You can also check [This Link](https://docs.docker.com/engine/reference/commandline/commit/)
 ##### 4.4 Run tensorflow with OpenCV:
             $ docker run --gpus all -it -p 8888:8888 -v <path to experiments folder>:/tf/agrivero/ tensorflow/tensorflow:2.5.0-gpu-jupyter-opencv
